@@ -24,6 +24,32 @@ filled_xp_vessel_level_5:
   lore:
     - <&d>Will give 55 XP (level 0-5) when used.
 
+empty_xp_vessel_level_10:
+  material: glass_bottle
+  debug: false
+  display name: <&f>Empty Large Experience Vessel
+  type: item
+  mechanisms:
+    nbt: vessel_capacity/160|vessel_level/10
+  lore:
+    - <&d>Will give 160 XP (level 0-10) when used.
+  recipes:
+    1:
+      type: shapeless
+      output_quantity: 1
+      hide_in_recipebook: false
+      input: glass_bottle|diamond|diamond|diamond|diamond|diamond
+
+filled_xp_vessel_level_10:
+  material: experience_bottle
+  debug: false
+  display name: <&f>Filled Large Experience Vessel
+  type: item
+  mechanisms:
+    nbt: vessel_capacity/160|vessel_level/10
+  lore:
+    - <&d>Will give 160 XP (level 0-10) when used.
+
 vessel_handler:
   type: world
   debug: false
